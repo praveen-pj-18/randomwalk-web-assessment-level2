@@ -1,0 +1,55 @@
+/* Additional styles for X and O */
+.cell.x {
+    color: red; /* X will be red */
+}
+
+.cell.o {
+    color: blue; /* O will be blue */
+}
+
+/* The rest of the CSS remains the same */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 5px;
+    margin: 20px auto;
+}
+
+.cell {
+    background-color: #ddd;
+    border: 1px solid #999;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+}
+
+.cell:hover {
+    background-color: #ccc;
+}
+
+#status {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
