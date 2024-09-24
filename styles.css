@@ -1,22 +1,14 @@
-/* Additional styles for X and O */
-.cell.x {
-    color: red; /* X will be red */
-}
-
-.cell.o {
-    color: blue; /* O will be blue */
-}
-
-/* The rest of the CSS remains the same */
+/* Main container to center everything */
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     text-align: center;
 }
 
+/* Tic Tac Toe board styling */
 .board {
     display: grid;
     grid-template-columns: repeat(3, 100px);
@@ -25,6 +17,7 @@
     margin: 20px auto;
 }
 
+/* Cell styling */
 .cell {
     background-color: #ddd;
     border: 1px solid #999;
@@ -41,15 +34,49 @@
     background-color: #ccc;
 }
 
+/* Status text */
 #status {
     font-size: 20px;
     font-weight: bold;
     margin-top: 20px;
 }
 
+/* Centered score section */
+#scores {
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px; /* Align with the width of the board */
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Style each score individually */
+#scores p {
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Reset button styling */
 button {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Additional styles for X and O colors */
+.cell.x {
+    color: red; /* X will be red */
+}
+
+.cell.o {
+    color: blue; /* O will be blue */
 }
